@@ -1,5 +1,5 @@
 /*
-* File: 	Tail.h
+* File: 	Food.h
 * Author: 	Collin Graf and Jasper Davis
 * Date:		4/26/2016
  */
@@ -7,15 +7,15 @@
 #include "Entity.h"
 #include <vector>
 
-#ifndef TRONSNAKE_TAIL_H
-#define TRONSNAKE_TAIL_H
+#ifndef TRONSNAKE_FOOD_H
+#define TRONSNAKE_FOOD_H
 
 using namespace std;
 
-class Tail: public Entity {
+class Food: public Entity {
 public:
 
-    Tail();
+    Food();
 
     int getType();
 
@@ -30,4 +30,7 @@ private:
     vector<int> RGB;
 
 };
-#endif //TRONSNAKE_TAIL_H
+
+#endif //TRONSNAKE_FOOD_H
+
+
