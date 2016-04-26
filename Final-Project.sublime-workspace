@@ -1,0 +1,336 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"get",
+				"getMineNeighbors"
+			],
+			[
+				"opera",
+				"operands"
+			],
+			[
+				"oper",
+				"operand2"
+			],
+			[
+				"inc",
+				"include"
+			],
+			[
+				"error",
+				"errorType"
+			],
+			[
+				"Token",
+				"Token"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "main.cpp",
+			"settings":
+			{
+				"buffer_size": 490,
+				"line_ending": "Unix",
+				"name": "#include <SFML/Graphics.hpp>"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 400.0,
+		"last_filter": "package",
+		"selected_items":
+		[
+			[
+				"package",
+				"Package Control: Remove Package"
+			],
+			[
+				"\\",
+				"Snippet: #!/usr/bin/env"
+			]
+		],
+		"width": 457.0
+	},
+	"console":
+	{
+		"height": 139.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/jasper/Dropbox/C++/Final Project"
+	],
+	"file_history":
+	[
+		"/home/jasper/Dropbox/C++/HW5/test.cpp",
+		"/home/jasper/Dropbox/C++/HW5/testMain.cpp",
+		"/home/jasper/Dropbox/C++/HW5/hash.lua",
+		"/home/jasper/Dropbox/C++/HW5/EmptyCell.h.gch",
+		"/home/jasper/Dropbox/C++/HW1/Token/testMain.cpp",
+		"/home/jasper/Dropbox/C++/HW2/Stack/Stack.h",
+		"/home/jasper/Dropbox/C++/HW5/Cell",
+		"/home/jasper/Dropbox/C++/HW1/Token/Token.cpp",
+		"/home/jasper/Dropbox/C++/HW5/Item.cpp",
+		"/home/jasper/Dropbox/C++/PFCalc/input.txt",
+		"/home/jasper/Dropbox/C++/PFCalc/error.txt",
+		"/home/jasper/Dropbox/C++/PFCalc/output.txt",
+		"/home/jasper/Dropbox/C++/PFCalc/h3main.cpp",
+		"/home/jasper/Dropbox/C++/Token/Token.h",
+		"/home/jasper/Dropbox/C++/PFCalc/PFCalc.cpp",
+		"/home/jasper/Dropbox/C++/PFCalc/PFCalc.h",
+		"/home/jasper/Dropbox/C++/PFCalc/Stack.cpp",
+		"/home/jasper/Dropbox/C++/PFCalc/Stack.h",
+		"/home/jasper/Dropbox/C++/Stack/h2main.cpp",
+		"/home/jasper/Dropbox/C++/PFCalc/Token.h",
+		"/home/jasper/Dropbox/C++/PFCalc/Token.cpp",
+		"/home/jasper/Dropbox/C++/Stack/Stack.cpp",
+		"/home/jasper/Dropbox/C++/Stack/Stack.h",
+		"/home/jasper/Dropbox/C++/Stack/input.txt",
+		"/home/jasper/Dropbox/C++/Stack/Token.h",
+		"/home/jasper/Dropbox/C++/Stack/Token.cpp",
+		"/home/jasper/Dropbox/C++/Token/h1main.cpp",
+		"/home/jasper/Dropbox/C++/Misc/main.cpp",
+		"/home/jasper/Dropbox/C++/Token/input.txt",
+		"/home/jasper/Dropbox/C++/Token/Token.cpp",
+		"/home/jasper/Dropbox/C++/Token/test_main.cpp",
+		"/home/jasper/Downloads/main.cpp",
+		"/home/jasper/Dropbox/spacegame/code/game.lua",
+		"/home/jasper/Dropbox/spacegame/code/console.lua",
+		"/home/jasper/Dropbox/spacegame/code/intro.lua",
+		"/home/jasper/Dropbox/spacegame/code/hud.lua",
+		"/home/jasper/Dropbox/spacegame/code/laser.lua",
+		"/home/jasper/Dropbox/spacegame/code/player.lua",
+		"/home/jasper/Dropbox/spacegame/code/collision.lua",
+		"/home/jasper/Dropbox/spacegame/code/camera.lua",
+		"/home/jasper/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+		"/home/jasper/Dropbox/spacegame/code/background.lua",
+		"/home/jasper/Downloads/Root_Flex/RunMeFlex.sh",
+		"/home/jasper/Downloads/rootkitXperia_20140719/install.bat",
+		"/home/jasper/Dropbox/spacegame/Astral.sublime-project",
+		"/home/jasper/Dropbox/spacegame/spacegame.love",
+		"/home/jasper/Dropbox/Love_Games/spacegame/intro.lua",
+		"/home/jasper/Dropbox/Love_Games/spacegame/conf.lua",
+		"/home/jasper/Dropbox/Love_Games/spacegame/game.lua",
+		"/home/jasper/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings",
+		"/home/jasper/Dropbox/Love_Games/Juicy/conf.lua"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"dog",
+			"}",
+			"10",
+			";\n",
+			"GRID_",
+			">\n",
+			"void",
+			"newCell",
+			"Cell",
+			";\n",
+			"picker",
+			"s",
+			";\n",
+			"/**",
+			"stack.",
+			"Stack.",
+			"stack.",
+			"stack",
+			"Stack",
+			"stack",
+			"NOTHING_TO_POP",
+			"memcpy",
+			"@brief",
+			";\n",
+			"}\n",
+			"newToken",
+			" isNumberValue",
+			"this.",
+			"this->",
+			"stream >> this->symbol;",
+			"this.",
+			"this->number;",
+			"this->symbol",
+			"stream =",
+			"this.symbol << stream.get();",
+			"stream >> this->symbol;",
+			"\"theme\"",
+			",\n",
+			"Flatland"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "main.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 490,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								467,
+								467
+							]
+						],
+						"settings":
+						{
+							"auto_name": "#include <SFML/Graphics.hpp>",
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "Final-Project.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/Dropbox/spacegame/Astral.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 400.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 400.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
