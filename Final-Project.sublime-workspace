@@ -39,6 +39,17 @@
 				"line_ending": "Unix",
 				"name": "#include <SFML/Graphics.hpp>"
 			}
+		},
+		{
+			"contents": "/**************************************\n\n    ENTITY HEADER\n\n    objective:\n\n\n\n**************************************/\n\n#ifndef ENTITY_H\n#define ENTITY_H\n\nclass Entity",
+			"file": "Entity.h",
+			"file_size": 157,
+			"file_write_time": 131061762868377101,
+			"settings":
+			{
+				"buffer_size": 166,
+				"line_ending": "Unix"
+			}
 		}
 	],
 	"build_system": "",
@@ -210,7 +221,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -226,8 +237,8 @@
 						"selection":
 						[
 							[
-								467,
-								467
+								490,
+								490
 							]
 						],
 						"settings":
@@ -235,6 +246,35 @@
 							"auto_name": "#include <SFML/Graphics.hpp>",
 							"syntax": "Packages/C++/C++.sublime-syntax",
 							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "Entity.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 166,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								166,
+								166
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
@@ -306,7 +346,7 @@
 		[
 			[
 				"",
-				"~/Dropbox/spacegame/Astral.sublime-project"
+				"~/Dropbox/C++/C++.sublime-project"
 			]
 		],
 		"width": 380.0
