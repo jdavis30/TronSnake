@@ -1,9 +1,23 @@
-/**************************************
+/*
+* CS100
+* 
+*/
 
-    ENTITY HEADER
+#ifndef ENTITY_H
+#define ENTITY_H
 
-    objective:
+class Entity{
+    public:
+        Entity(int x = 0, int y = 0);
+        int getX();
+        void setX();
+        int getY();
+        void setY();
+        virtual int getType() = 0;
+        virtual void draw() = 0;
+    private:
+        int x;
+        int y;
 
 
-
-**************************************/
+}
