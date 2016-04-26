@@ -7,7 +7,6 @@
 #import "Tail.h"
 
 Tail::Tail(){
-
 }
 
 int Tail::getType(){
