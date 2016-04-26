@@ -11,8 +11,7 @@
 #include "Entity.h"
 class EmptyCell: public Entity{
     public:
-        virtual int getType();
-        virtual void draw() = 0;
+        int getType();
     private:
 
 };
