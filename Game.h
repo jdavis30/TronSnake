@@ -9,6 +9,9 @@
 #define GAME_H
 #include "Grid.h"
 #include <vector>
+#include <SFML/Audio.hpp>
+#include <SFML/Graphics.hpp>
+
 
 class Game {
 	public:
@@ -17,6 +20,8 @@ class Game {
 		void update();
 
 		void draw();
+
+		friend Grid;
 
 	private:
 		int x;

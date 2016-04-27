@@ -23,6 +23,12 @@ public:
 
     void draw();
 
+    Entity* getCell(int x = 0, int y = 0);
+
+    void setCell(int x = 0, int y = 0, Entity &e);
+
+    friend Game;
+
 private:
 
     Entity ** grid;

@@ -6,7 +6,10 @@
 
 #import "Tail.h"
 
-Tail::Tail(){
+Tail::Tail(int r, int g, int b){
+	RGB[0] = r;
+	RGB[1] = g;
+	RGB[2] = b;
 }
 
 int Tail::getType(){
