@@ -17,7 +17,3 @@ int Head::getDirection() {
 void Head::setDirection(int dir) {
 	direction = dir;
 }
-
-void draw() {
-	;
-}

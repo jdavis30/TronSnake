@@ -15,8 +15,6 @@ class Head: public Entity {
 		Head(int dir = 1);
 		int getDirection();
 		void setDirection(int dir = 0);
-		void draw();
-
 	private:
 		int direction;
 

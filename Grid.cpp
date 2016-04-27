@@ -34,8 +34,3 @@ Grid::Grid(int x = 10, int y = 10){
         }
     }
 }
-
-
-void Grid::draw(){
-
-}

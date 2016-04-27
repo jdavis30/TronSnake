@@ -31,41 +31,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "main.cpp",
-			"settings":
-			{
-				"buffer_size": 490,
-				"line_ending": "Unix",
-				"name": "#include <SFML/Graphics.hpp>"
-			}
-		},
-		{
-			"file": "Entity.h",
-			"settings":
-			{
-				"buffer_size": 510,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Entity.cpp",
-			"settings":
-			{
-				"buffer_size": 405,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "GNU bash, version 4.3.11(1)-release (x86_64-pc-linux-gnu)\nCopyright (C) 2013 Free Software Foundation, Inc.\nLicense GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>\n\nThis is free software; you are free to change and redistribute it.\nThere is NO WARRANTY, to the extent permitted by law.\nbash: cannot set terminal process group (2662): Inappropriate ioctl for device\nbash: no job control in this shell\n _____________________________________\n/ You have a deep appreciation of the \\\n\\ arts and music.                     /\n -------------------------------------\n   \\\n    \\\n        .--.\n       |o_o |\n       |:_/ |\n      //   \\ \\\n     (|     | )\n    /'\\_   _/`\\\n    \\___)=(___/\n\njasper@jasper-ThinkPad-X201 ~/Dropbox/C++/Final Project $ g++ -std=c++11 Enti< ~/Dropbox/C++/Final Project $ g++ -std=c++11 Entit                         y.h Entity.cpp\nEntity.h:9:0: error: unterminated #ifndef\n #ifndef ENTITY_H\n ^\nEntity.h:25:1: error: expected ‘;’ after class definition\n }\n ^\njasper@jasper-ThinkPad-X201 ~/Dropbox/C++/Final Project $ g++ -std=c++11 Enti< ~/Dropbox/C++/Final Project $ g++ -std=c++11 Entit                         y.h Entity.cpp -o\ng++: error: missing filename after ‘-o’\njasper@jasper-ThinkPad-X201 ~/Dropbox/C++/Final Project $ g++ -std=c++11 Enti< ~/Dropbox/C++/Final Project $ g++ -std=c++11 Entit                         y.h Entity.cpp -o Entity\nIn file included from Entity.cpp:8:0:\nEntity.h:9:0: error: unterminated #ifndef\n #ifndef ENTITY_H\n ^\nEntity.h:12:1: error: new types may not be defined in a return type\n class Entity{\n ^\nEntity.h:12:1: note: (perhaps a semicolon is missing after the definition of ‘Entity’)\nEntity.cpp:10:34: error: return type specification for constructor invalid\n Entity::Entity(int xVal, int yVal) {\n                                  ^\njasper@jasper-ThinkPad-X201 ~/Dropbox/C++/Final Project $ Entity.h:9:0: error< ~/Dropbox/C++/Final Project $ Entity.h:9:0: error:                          unterminated #ifndef\nEntity.h:9:0:: command not found\njasper@jasper-ThinkPad-X201 ~/Dropbox/C++/Final Project $  #ifndef ENTITY_H\njasper@jasper-ThinkPad-X201 ~/Dropbox/C++/Final Project $  ^\n^: command not found\njasper@jasper-ThinkPad-X201 ~/Dropbox/C++/Final Project $ Entity.h:25:1: erro< ~/Dropbox/C++/Final Project $ Entity.h:25:1: error                         : expected ‘;’ after <ct $ Entity.h:25:1: error: expected ‘;’ after c                         lass definition\nEntity.h:25:1:: command not found\n’: command not found\njasper@jasper-ThinkPad-X201 ~/Dropbox/C++/Final Project $  }\nbash: syntax error near unexpected token `}'\njasper@jasper-ThinkPad-X201 ~/Dropbox/C++/Final Project $  ^\n^: command not found\njasper@jasper-ThinkPad-X201 ~/Dropbox/C++/Final Project $ ",
-			"settings":
-			{
-				"buffer_size": 2895,
-				"line_ending": "Unix",
-				"name": "Running [⢁]",
-				"scratch": true
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -112,6 +77,23 @@
 	],
 	"file_history":
 	[
+		"/home/jasper/Dropbox/C++/Final Project/Tail.cpp",
+		"/home/jasper/Dropbox/C++/Final Project/Tail.h",
+		"/home/jasper/Dropbox/C++/Final Project/Grid.cpp",
+		"/home/jasper/Dropbox/C++/Final Project/Grid.h",
+		"/home/jasper/Dropbox/C++/Final Project/Game.cpp",
+		"/home/jasper/Dropbox/C++/Final Project/mainTest.cpp",
+		"/home/jasper/Dropbox/C++/Final Project/Game.h",
+		"/home/jasper/Dropbox/C++/Final Project/Head.cpp",
+		"/home/jasper/Dropbox/C++/Final Project/Entity.h",
+		"/home/jasper/Dropbox/C++/Final Project/Food.cpp",
+		"/home/jasper/Dropbox/C++/Final Project/Food.h",
+		"/home/jasper/Dropbox/C++/Final Project/Head.h",
+		"/home/jasper/Dropbox/C++/Final Project/EmptyCell.cpp",
+		"/home/jasper/Dropbox/C++/Final Project/EmptyCell.h",
+		"/home/jasper/Dropbox/C++/Final Project/Entity.cpp",
+		"/home/jasper/Dropbox/C++/Final Project/main.cpp",
+		"/home/jasper/Dropbox/C++/Final Project/CMakeLists.txt",
 		"/home/jasper/Dropbox/C++/HW5/test.cpp",
 		"/home/jasper/Dropbox/C++/HW5/testMain.cpp",
 		"/home/jasper/Dropbox/C++/HW5/hash.lua",
@@ -236,128 +218,8 @@
 	"groups":
 	[
 		{
-			"selected": 1,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "main.cpp",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 490,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								490,
-								490
-							]
-						],
-						"settings":
-						{
-							"auto_name": "#include <SFML/Graphics.hpp>",
-							"syntax": "Packages/C++/C++.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "Entity.h",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 510,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								502,
-								502
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C++/C++.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "Entity.cpp",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 405,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								395,
-								395
-							]
-						],
-						"settings":
-						{
-							"auto_name": "",
-							"syntax": "Packages/C++/C++.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2895,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2895,
-								2895
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 237.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				}
 			]
 		}
 	],

@@ -17,7 +17,6 @@ class Entity{
         int getY();
         void setY(int yVal = 0);
         virtual int getType() = 0;
-        virtual void draw() = 0;
     private:
         int x;
         int y;
