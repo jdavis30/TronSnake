@@ -14,10 +14,9 @@ Grid::Grid(int x = 10, int y = 10){
     SIZE_X = x;
     SIZE_Y = y;
     grid = new Entity*[SIZE_X*SIZE_Y];
-    EmptyCell empty = new EmptyCell;
-    Head head = new Head;
-    Tail tail = new Tail;
-    Food food = new Food;
+    empty = new EmptyCell;
+    head = new Head;
+    food = new Food;
     int index;
     while(true){
         index = rand() % (SIZE_X*SIZE_Y-1);
@@ -36,10 +35,6 @@ Grid::Grid(int x = 10, int y = 10){
     }
 }
 
-
-void Grid::update(){
-
-}
 
 void Grid::draw(){
 

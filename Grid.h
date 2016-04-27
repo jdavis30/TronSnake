@@ -6,6 +6,10 @@
 
 #include <vector>
 #include "Entity.h"
+#include "EmptyCell.h"
+#include "Tail.h"
+#include "Food.h"
+#include "Head.h"
 
 #ifndef TRONSNAKE_GRID_H
 #define TRONSNAKE_GRID_H
@@ -17,8 +21,6 @@ public:
 
     Grid(int x = 10, int y = 10);
 
-    void update();
-
     void draw();
 
 private:
@@ -26,6 +28,9 @@ private:
     Entity ** grid;
     int SIZE_X;
     int SIZE_Y;
+    EmptyCell *empty;
+    Head *head;
+    Food *food;
 
 };
 
