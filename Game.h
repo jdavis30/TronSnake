@@ -17,18 +17,17 @@ class Game {
 	public:
 		Game(int sizeX = 10, int sizeY = 10);
 
-		void update();
+		bool update();
 
 		void draw();
 
-		friend Grid;
-
 	private:
-		int x;
-		int y;
-		Grid grid;
+		int SIZE_X;
+		int SIZE_Y;
 		Head head;
 		vector<Tail> tail;
+		EmptyCell emptyCell;
+		Grid grid;
 
 };
 

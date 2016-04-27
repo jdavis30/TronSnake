@@ -23,9 +23,9 @@ public:
 
     void draw();
 
-    Entity* getCell(int x = 0, int y = 0);
+    Entity* getCell(int x);
 
-    void setCell(int x = 0, int y = 0, Entity &e);
+    void setCell(int x, Entity &e);
 
     friend Game;
 
