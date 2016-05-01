@@ -21,9 +21,15 @@ public:
 
     Grid(int x = 10, int y = 10);
 
+<<<<<<< HEAD
     Entity* getCell(int x = 0, int y = 0);
+=======
+    void draw();
 
-    void setCell(int x = 0, int y = 0, Entity &e);
+    Entity* getCell(int x);
+>>>>>>> 5730afd90c7ede4c14e0c3ac03b9134cceb83ef5
+
+    void setCell(int x, Entity &e);
 
     friend Game;
 

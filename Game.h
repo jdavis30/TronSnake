@@ -15,16 +15,21 @@ class Game {
 	public:
 		Game(int sizeX = 10, int sizeY = 10);
 
-		void update();
+		bool update();
 
+<<<<<<< HEAD
 		friend Grid;
+=======
+		void draw();
+>>>>>>> 5730afd90c7ede4c14e0c3ac03b9134cceb83ef5
 
 	private:
-		int x;
-		int y;
-		Grid grid;
+		int SIZE_X;
+		int SIZE_Y;
 		Head head;
 		vector<Tail> tail;
+		EmptyCell emptyCell;
+		Grid grid;
 
 };
 

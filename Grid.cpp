@@ -33,4 +33,19 @@ Grid::Grid(int x = 10, int y = 10){
             grid[i] = empty;
         }
     }
+<<<<<<< HEAD
+=======
+}
+
+Entity* Grid::getCell(int x){
+    return grid[x];
+}
+
+void Grid::setCell(int x, Entity &e){
+    grid[x] = &e;
+}
+
+void Grid::draw(){
+
+>>>>>>> 5730afd90c7ede4c14e0c3ac03b9134cceb83ef5
 }
