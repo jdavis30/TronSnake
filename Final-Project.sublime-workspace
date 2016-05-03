@@ -40,6 +40,30 @@
 			}
 		},
 		{
+			"file": "Game.h",
+			"settings":
+			{
+				"buffer_size": 506,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Grid.cpp",
+			"settings":
+			{
+				"buffer_size": 872,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Grid.h",
+			"settings":
+			{
+				"buffer_size": 590,
+				"line_ending": "Unix"
+			}
+		},
+		{
 			"file": "Final-Project.sublime-project",
 			"settings":
 			{
@@ -247,7 +271,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 3,
 			"sheets":
 			[
 				{
@@ -263,8 +287,8 @@
 						"selection":
 						[
 							[
-								439,
-								439
+								291,
+								291
 							]
 						],
 						"settings":
@@ -277,11 +301,100 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
+					"file": "Game.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 506,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								363,
+								363
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "Grid.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 872,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								870,
+								870
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 475.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "Grid.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 590,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								222,
+								222
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
 					"file": "Final-Project.sublime-project",
 					"semi_transient": false,
 					"settings":
@@ -293,23 +406,24 @@
 						"selection":
 						[
 							[
-								159,
-								159
+								248,
+								248
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JSON.sublime-syntax"
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 5,
 					"file": "/home/jasper/.config/sublime-text-3/Packages/SublimeGDB/SublimeGDB.sublime-settings",
 					"semi_transient": false,
 					"settings":
@@ -335,24 +449,9 @@
 						"translation.y": 1915.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 5,
 					"type": "text"
 				}
-			]
-		},
-		{
-			"sheets":
-			[
-			]
-		},
-		{
-			"sheets":
-			[
-			]
-		},
-		{
-			"sheets":
-			[
 			]
 		}
 	],
@@ -371,39 +470,18 @@
 			[
 				0,
 				0,
-				3,
+				1,
 				1
-			],
-			[
-				0,
-				1,
-				1,
-				2
-			],
-			[
-				1,
-				1,
-				2,
-				2
-			],
-			[
-				2,
-				1,
-				3,
-				2
 			]
 		],
 		"cols":
 		[
 			0.0,
-			0.313185840708,
-			0.66,
 			1.0
 		],
 		"rows":
 		[
 			0.0,
-			0.75,
 			1.0
 		]
 	},

@@ -11,8 +11,8 @@
 #include "Food.h"
 #include "Head.h"
 
-#ifndef TRONSNAKE_GRID_H
-#define TRONSNAKE_GRID_H
+#ifndef GRID_H
+#define GRID_H
 
 using namespace std;
 
@@ -20,14 +20,10 @@ class Grid {
 public:
 
     Grid(int x = 10, int y = 10);
-
-<<<<<<< HEAD
     Entity* getCell(int x = 0, int y = 0);
-=======
     void draw();
 
     Entity* getCell(int x);
->>>>>>> 5730afd90c7ede4c14e0c3ac03b9134cceb83ef5
 
     void setCell(int x, Entity &e);
 
@@ -44,4 +40,4 @@ private:
 
 };
 
-#endif //TRONSNAKE_GRID_H
+#endif //GRID_H

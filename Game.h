@@ -9,19 +9,15 @@
 #define GAME_H
 #include "Grid.h"
 #include <vector>
+#include <random>
 
 
 class Game {
 	public:
 		Game(int sizeX = 10, int sizeY = 10);
-
 		bool update();
-
-<<<<<<< HEAD
 		friend Grid;
-=======
 		void draw();
->>>>>>> 5730afd90c7ede4c14e0c3ac03b9134cceb83ef5
 
 	private:
 		int SIZE_X;
