@@ -1,23 +1,14 @@
-#include <SFML/Graphics.hpp>
+//#include <SFML/Graphics.hpp>
+#include <iostream>
+#include "Grid.h"
 
 int main()
 {
-    sf::RenderWindow window(sf::VideoMode(200, 200), "SFML works!");
-    sf::CircleShape shape(100.f);
-    shape.setFillColor(sf::Color::Green);
-
-    while (window.isOpen())
-    {
-        sf::Event event;
-        while (window.pollEvent(event))
-        {
-            if (event.type == sf::Event::Closed)
-                window.close();
+    Grid grid = Grid();
+    for(int i=0; i<10; i++){
+        for(int j=0; j<10; j++){
+            cout << grid.getCell(i*10 + j);
         }
-
-        window.clear();
-        window.draw(shape);
-        window.display();
     }
 
     return 0;

@@ -3,10 +3,6 @@
 //
 
 #include "Grid.h"
-#include "Food.h"
-#include "Tail.h"
-#include "Head.h"
-#include "EmptyCell.h"
 #include <random>
 
 

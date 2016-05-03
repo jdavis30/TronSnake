@@ -5,14 +5,14 @@
  * Date: 4/26/2016
  * Objective: "Operator" of the entire system. updates variables, draws them, and ends the process.
  */
-#ifndef GAME_H
-#define GAME_H
 #include "Grid.h"
 #include <vector>
-#include <SFML/Audio.hpp>
-#include <SFML/Graphics.hpp>
+//#include <SFML/Audio.hpp>
+//#include <SFML/Graphics.hpp>
 
 
+#ifndef GAME_H
+#define GAME_H
 class Game {
 	public:
 		Game(int sizeX = 10, int sizeY = 10);
@@ -31,4 +31,4 @@ class Game {
 
 };
 
-#endif GAME_H
+#endif /*GAME_H */

@@ -4,7 +4,7 @@
 * Date:		4/26/2016
  */
 
-#import "Tail.h"
+#include "Tail.h"
 
 Tail::Tail(int r, int g, int b){
 	RGB[0] = r;
