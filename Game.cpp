@@ -8,7 +8,7 @@
 #include "Food.h"
 #include "Game.h"
 
-Game::Game(int sizeX = 10, int sizeY = 10){
+Game::Game(int sizeX, int sizeY){
     SIZE_X = sizeX-1;
     SIZE_Y = sizeY-1;
     emptyCell = EmptyCell();

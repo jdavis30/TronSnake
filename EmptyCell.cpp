@@ -7,6 +7,10 @@
  * 
  */
 #include "EmptyCell.h"
+
+EmptyCell::EmptyCell(int xVal, int yVal): Entity(xVal, yVal) {
+
+}
 int EmptyCell::getType() {
 	return 0;
 }

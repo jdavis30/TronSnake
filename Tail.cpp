@@ -5,8 +5,9 @@
  */
 
 #include "Tail.h"
+using namespace std;
 
-Tail::Tail(int r, int g, int b){
+Tail::Tail(int xVal, int yVal, int r, int g, int b):Entity(xVal, yVal){
 	RGB[0] = r;
 	RGB[1] = g;
 	RGB[2] = b;

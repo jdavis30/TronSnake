@@ -15,7 +15,7 @@ using namespace std;
 class Tail: public Entity {
 public:
 
-    Tail(int r = 255, int g = 255, int b = 255);
+    Tail(int xVal = 0, int yVal = 0, int r = 255, int g = 255, int b = 255);
 
     int getType();
 
