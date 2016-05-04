@@ -11,7 +11,9 @@
 #include "Entity.h"
 class EmptyCell: public Entity{
     public:
-        EmptyCell(int xVal = 0, int yVal = 0);
+        EmptyCell(int xVal, int yVal);
+
+        EmptyCell();
 
         int getType();
 

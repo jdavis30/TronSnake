@@ -3,10 +3,14 @@
 //
 
 #include "Grid.h"
+#include "EmptyCell.cpp"
+#include "Head.cpp"
 #include <random>
+#include <time.h>
 
 
 Grid::Grid(int x, int y){
+    srand (time(NULL)); //seeds random
     SIZE_X = x;
     SIZE_Y = y;
     grid = new Entity*[SIZE_X*SIZE_Y];
