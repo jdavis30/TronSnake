@@ -1,18 +1,8 @@
-#include "Grid.h"
 #include <SFML/Graphics.hpp>
-#include <cstdlib>
-#include <time.h>
+#include "Tail.h"
 int main()
 {
-    time_t seconds;
-    time(&seconds);
-    srand((unsigned int) seconds);
-    Grid grid(9, 9);
-    Head tail(50, 35, 140);
-
-    for(int i = 0;  i < 4; i ++){
-        grid.setCell(rand(9), rand(9), &tail);
-    }
+    Tail tail(45, 56, 240, 380, 33);
     // create the window
     sf::RenderWindow window(sf::VideoMode(800, 600), "TronGame Test");
 
@@ -30,7 +20,7 @@ int main()
 
         // clear the window with black color
         window.clear(sf::Color::Black);
-
+        window.draw(tail.drawable);
         // draw everything here...
         // window.draw(...);
 

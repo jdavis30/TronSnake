@@ -76,7 +76,6 @@ bool Game::update(){
     }
     location = head.getY()*SIZE_Y + head.getX();
     moveInTo = grid.getCell(location);
-    cout << endl;
     if ((*moveInTo).getType() == 0){
         grid.setCell(location, head);
     } else if((*moveInTo).getType() == 3){

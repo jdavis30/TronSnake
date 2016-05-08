@@ -8,7 +8,6 @@
 
 #ifndef TRONSNAKE_ENTITY_H
 #define TRONSNAKE_ENTITY_H
-
 class Entity{
 public:
     Entity(int xVal = 0, int yVal = 0);
