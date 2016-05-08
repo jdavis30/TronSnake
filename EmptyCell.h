@@ -6,8 +6,8 @@
  * Objective:   Placeholder object for grid.
  * 
  */
-#ifndef EMPTYCELL_H
-#define EMPTYCELL_H
+#ifndef TRONSNAKE_EMPTYCELL_H
+#define TRONSNAKE_EMPTYCELL_H
 #include "Entity.h"
 class EmptyCell: public Entity{
     public:
@@ -16,10 +16,8 @@ class EmptyCell: public Entity{
         EmptyCell();
 
         int getType();
-
-        void draw();
     private:
 
 };
 
-#endif /** EMPTYCELL_H */
+#endif /** TRONSNAKE_EMPTYCELL_H */

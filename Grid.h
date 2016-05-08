@@ -21,8 +21,6 @@ public:
 
     Grid(int x = 10, int y = 10);
 
-    void draw();
-
     Entity* getCell(int x);
 
     void setCell(int x, Entity &e);

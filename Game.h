@@ -11,8 +11,8 @@
 //#include <SFML/Graphics.hpp>
 
 
-#ifndef GAME_H
-#define GAME_H
+#ifndef TRONSNAKE_GAME_H
+#define TRONSNAKE_GAME_H
 class Game {
 	public:
 		Game(int sizeX = 10, int sizeY = 10);
@@ -33,4 +33,4 @@ class Game {
 
 };
 
-#endif /*GAME_H */
+#endif /*TRONSNAKE_GAME_H */

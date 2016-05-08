@@ -42,7 +42,3 @@ Entity* Grid::getCell(int x){
 void Grid::setCell(int x, Entity &e){
     grid[x] = &e;
 }
-
-void Grid::draw(){
-
-}
