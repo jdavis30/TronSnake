@@ -19,6 +19,8 @@ class Game {
 
 		bool update();
 
+		void setDirection(char c);
+
 		void draw();
 
 	private:

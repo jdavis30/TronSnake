@@ -8,9 +8,9 @@
 using namespace std;
 
 Tail::Tail(int xVal, int yVal, int r, int g, int b):Entity(xVal, yVal){
-	RGB[0] = r;
-	RGB[1] = g;
-	RGB[2] = b;
+	RGB.push_back(r);
+	RGB.push_back(g);
+	RGB.push_back(b);
 }
 
 int Tail::getType(){
