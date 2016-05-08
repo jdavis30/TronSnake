@@ -23,3 +23,7 @@ void Food::setColorRGB(int r, int g, int b){
 vector<int> Food::getColorRGB(){
     return RGB;
 }
+
+void Food::draw(){
+
+}

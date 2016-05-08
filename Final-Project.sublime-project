@@ -4,11 +4,5 @@
 		{
 			"path": "."
 		}
-	],
-	"settings":
-    	{
-	        "sublimegdb_workingdir": "${folder:${file}}",
-	        "sublimegdb_commandline": "gdb --interpreter=mi ./${file_base_name}",
-	    	"sublimegdb_exec_cmd": "-exec-run"
-    	}
+	]
 }

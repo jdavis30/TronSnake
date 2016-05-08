@@ -3,17 +3,10 @@
 //
 
 #include "Grid.h"
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-#include <random>
->>>>>>> ba54fc091809766e1f1aac1154c6e2d28aac9978
-=======
 #include "EmptyCell.cpp"
 #include "Head.cpp"
 #include <random>
 #include <time.h>
->>>>>>> e32ceeb22c039cb11e1d817806a9e9ea861b820a
 
 
 Grid::Grid(int x, int y){
@@ -51,4 +44,5 @@ void Grid::setCell(int x, Entity &e){
 }
 
 void Grid::draw(){
+
 }

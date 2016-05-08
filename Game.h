@@ -7,27 +7,20 @@
  */
 #include "Grid.h"
 #include <vector>
-<<<<<<< HEAD
-#include <random>
-=======
 //#include <SFML/Audio.hpp>
 //#include <SFML/Graphics.hpp>
->>>>>>> ba54fc091809766e1f1aac1154c6e2d28aac9978
 
 
-#ifndef GAME_H
-#define GAME_H
+#ifndef TRONSNAKE_GAME_H
+#define TRONSNAKE_GAME_H
 class Game {
 	public:
 		Game(int sizeX = 10, int sizeY = 10);
+
 		bool update();
-<<<<<<< HEAD
-		friend Grid;
-=======
 
 		void setDirection(char c);
 
->>>>>>> e32ceeb22c039cb11e1d817806a9e9ea861b820a
 		void draw();
 
 	private:
@@ -40,4 +33,4 @@ class Game {
 
 };
 
-#endif /*GAME_H */
+#endif /*TRONSNAKE_GAME_H */

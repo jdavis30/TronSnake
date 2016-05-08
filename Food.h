@@ -23,6 +23,8 @@ public:
 
     vector<int> getColorRGB();
 
+    void draw();
+
 private:
 
     vector<int> RGB;

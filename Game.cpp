@@ -46,7 +46,7 @@ bool Game::update(){
     bool ateFood = false;
     Entity * moveInTo;
     if(dir == -3) {
-        cout << "quit game";
+        cout << "quit game" << endl;
         return false;
     }
     if(dir == 0){
@@ -75,19 +75,20 @@ bool Game::update(){
         }
     }
     location = head.getY()*SIZE_Y + head.getX();
+    cout << "getting moveInTo...";
     moveInTo = grid.getCell(location);
+    cout << "got " << (*moveInTo).getType() << endl;
+    cout << endl;
     if ((*moveInTo).getType() == 0){
         grid.setCell(location, head);
-    }
-    else if((*moveInTo).getType() == 3){
+    } else if((*moveInTo).getType() == 3){
         grid.setCell(location, head);
         ateFood = true;
     }
-    else{
-        cout << "lost"; //TAKE OUT AFTER DONE TESTING
-        return false;//YOU HIT THE TAIL AND LOST THE GAME!!!!!
-    }
-
+    /*if ((*moveInTo).getType() == 2){
+        cout << "lost" << endl; //TAKE OUT AFTER DONE TESTING
+        return false; //YOU HIT THE TAIL AND LOST THE GAME!!!!!
+    }*/
     /////////// Deal with tail ////////////////
     Tail whereHeadWas = Tail();
     whereHeadWas.setX(head_x);

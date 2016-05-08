@@ -7,18 +7,20 @@
  */
 
 #include "Entity.h"
-#ifndef HEAD_H
-#define HEAD_H
+#ifndef TRONSNAKE_HEAD_H
+#define TRONSNAKE_HEAD_H
 
 class Head: public Entity {
 	public:
 		Head(int xVal = 0, int yVal = 0, int dir = 1);
 		int getDirection();
 		void setDirection(int dir = 0);
+		void draw();
 		int getType();
+
 	private:
 		int direction;
 
 };
 
-#endif /** Head_H */
+#endif /** TRONSNAKE_HEAD_H */
