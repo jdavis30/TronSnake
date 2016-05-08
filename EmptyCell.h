@@ -16,8 +16,6 @@ class EmptyCell: public Entity{
         EmptyCell();
 
         int getType();
-
-        void draw();
     private:
 
 };

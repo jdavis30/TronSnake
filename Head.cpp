@@ -21,7 +21,3 @@ void Head::setDirection(int dir) {
 int Head::getType() {
 	return 1;
 }
-
-void draw() {
-	;
-}

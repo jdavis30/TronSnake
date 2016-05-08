@@ -75,30 +75,27 @@ bool Game::update(){
         }
     }
     location = head.getY()*SIZE_Y + head.getX();
-    cout << "getting moveInTo...";
     moveInTo = grid.getCell(location);
-    cout << "got " << (*moveInTo).getType() << endl;
     cout << endl;
     if ((*moveInTo).getType() == 0){
         grid.setCell(location, head);
     } else if((*moveInTo).getType() == 3){
         grid.setCell(location, head);
         ateFood = true;
-    }
-    /*if ((*moveInTo).getType() == 2){
+    }else {
         cout << "lost" << endl; //TAKE OUT AFTER DONE TESTING
         return false; //YOU HIT THE TAIL AND LOST THE GAME!!!!!
-    }*/
+    }
     /////////// Deal with tail ////////////////
-    Tail whereHeadWas = Tail();
-    whereHeadWas.setX(head_x);
-    whereHeadWas.setY(head_y);
-    tail.insert (tail.begin(), whereHeadWas);
-    grid.setCell(whereHeadWas.getY()*SIZE_Y + whereHeadWas.getX(), whereHeadWas);
+    Tail* whereHeadWas = new Tail();
+    (*whereHeadWas).setX(head_x);
+    (*whereHeadWas).setY(head_y);
+    tail.insert (tail.begin(), (*whereHeadWas));
+    grid.setCell((*whereHeadWas).getY()*SIZE_Y + (*whereHeadWas).getX(), (*whereHeadWas));
     if(!(ateFood)) {
-        Tail t = tail.back();
+        Tail* t = &tail.back();
         tail.pop_back();
-        grid.setCell(t.getY()*SIZE_Y+t.getX(), emptyCell);
+        grid.setCell((*t).getY()*SIZE_Y+(*t).getX(), emptyCell);
     }
 
     /////////// Deal with eaten food /////////////
