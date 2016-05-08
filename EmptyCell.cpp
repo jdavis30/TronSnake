@@ -10,3 +10,7 @@
 int EmptyCell::getType() {
 	return 0;
 }
+
+void EmptyCell::draw(){
+
+}

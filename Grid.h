@@ -27,8 +27,6 @@ public:
 
     void setCell(int x, Entity &e);
 
-    friend Game;
-
 private:
 
     Entity ** grid;

@@ -3,6 +3,10 @@
 //
 
 #include "Grid.h"
+<<<<<<< HEAD
+=======
+#include <random>
+>>>>>>> ba54fc091809766e1f1aac1154c6e2d28aac9978
 
 
 Grid::Grid(int x = 10, int y = 10){

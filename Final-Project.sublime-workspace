@@ -40,26 +40,26 @@
 			}
 		},
 		{
+			"file": "Head.h",
+			"settings":
+			{
+				"buffer_size": 413,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Head.cpp",
+			"settings":
+			{
+				"buffer_size": 363,
+				"line_ending": "Unix"
+			}
+		},
+		{
 			"file": "Game.h",
 			"settings":
 			{
-				"buffer_size": 523,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Grid.cpp",
-			"settings":
-			{
-				"buffer_size": 777,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Grid.h",
-			"settings":
-			{
-				"buffer_size": 590,
+				"buffer_size": 658,
 				"line_ending": "Unix"
 			}
 		}
@@ -113,12 +113,15 @@
 	],
 	"file_history":
 	[
+		"/tmp/fz3temp-1/index 2.html",
+		"/tmp/fz3temp-1/index.html",
+		"/home/jasper/%F",
+		"/home/jasper/Dropbox/C++/Final Project/Grid.h",
+		"/home/jasper/Dropbox/C++/Final Project/Grid.cpp",
 		"/home/jasper/Dropbox/C++/Final Project/Final-Project.sublime-project",
 		"/home/jasper/.config/sublime-text-3/Packages/SublimeGDB/SublimeGDB.sublime-settings",
 		"/home/jasper/Dropbox/C++/Final Project/Tail.cpp",
 		"/home/jasper/Dropbox/C++/Final Project/Tail.h",
-		"/home/jasper/Dropbox/C++/Final Project/Grid.cpp",
-		"/home/jasper/Dropbox/C++/Final Project/Grid.h",
 		"/home/jasper/Dropbox/C++/Final Project/Game.cpp",
 		"/home/jasper/Dropbox/C++/Final Project/mainTest.cpp",
 		"/home/jasper/Dropbox/C++/Final Project/Game.h",
@@ -256,7 +259,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -272,8 +275,8 @@
 						"selection":
 						[
 							[
-								291,
-								291
+								411,
+								411
 							]
 						],
 						"settings":
@@ -286,16 +289,72 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
+					"file": "Head.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 413,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								343,
+								343
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "Head.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 363,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								363,
+								363
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
 					"file": "Game.h",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 523,
+						"buffer_size": 658,
 						"regions":
 						{
 						},
@@ -315,67 +374,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "Grid.cpp",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 777,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								59,
-								59
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C++/C++.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
 					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "Grid.h",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 590,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								222,
-								222
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C++/C++.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
 					"type": "text"
 				}
 			]

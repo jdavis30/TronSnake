@@ -6,15 +6,16 @@
  * Objective:   Head of the tron snake, defines where the body will go next.
  */
 
+#include "Entity.h"
 #ifndef HEAD_H
 #define HEAD_H
-#include "Entity.h"
 
 class Head: public Entity {
 	public:
 		Head(int dir = 1);
 		int getDirection();
 		void setDirection(int dir = 0);
+		int getType();
 	private:
 		int direction;
 

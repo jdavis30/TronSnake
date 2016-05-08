@@ -17,3 +17,7 @@ int Head::getDirection() {
 void Head::setDirection(int dir) {
 	direction = dir;
 }
+
+int Head::getType() {
+	return 1;
+}
