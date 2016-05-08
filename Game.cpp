@@ -94,15 +94,16 @@ bool Game::update(){
         grid.setCell(t.getY()*SIZE_Y+t.getX(), emptyCell);
     }
 
-    /////////// Deal with eatten food /////////////
+    /////////// Deal with eaten food /////////////
 
     if(ateFood){
-        Food newFood = Food();
+        Food* newFood = new Food();
+        int index;
         while(true){
-            int index = rand() % (SIZE_X*SIZE_Y-1);
-            if((*grid.getCell(index)).getType() != 0)
+            index = rand() % (SIZE_X*SIZE_Y-1);
+           if((*grid.getCell(index)).getType() != 0)
                 continue;
-            grid.setCell(index,newFood);
+            grid.setCell(index,*newFood);
             break;
         }
     }
