@@ -19,7 +19,3 @@ EmptyCell::EmptyCell(): Entity(0, 0) {
 int EmptyCell::getType() {
 	return 0;
 }
-
-void EmptyCell::draw(){
-
-}

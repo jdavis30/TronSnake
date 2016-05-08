@@ -26,7 +26,3 @@ void Tail::setColorRGB(int r, int g, int b){
 vector<int> Tail::getColorRGB(){
     return RGB;
 }
-
-void Tail::draw(){
-
-}

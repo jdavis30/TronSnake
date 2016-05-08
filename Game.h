@@ -21,8 +21,6 @@ class Game {
 
 		void setDirection(char c);
 
-		void draw();
-
 	private:
 		int SIZE_X;
 		int SIZE_Y;
