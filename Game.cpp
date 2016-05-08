@@ -89,15 +89,15 @@ bool Game::update(){
     }
 
     /////////// Deal with tail ////////////////
-    Tail whereHeadWas = Tail();
-    whereHeadWas.setX(head_x);
-    whereHeadWas.setY(head_y);
-    tail.insert (tail.begin(), whereHeadWas);
-    grid.setCell(whereHeadWas.getY()*SIZE_Y + whereHeadWas.getX(), whereHeadWas);
+    Tail* whereHeadWas = new Tail();
+    (*whereHeadWas).setX(head_x);
+    (*whereHeadWas).setY(head_y);
+    tail.insert (tail.begin(), (*whereHeadWas));
+    grid.setCell((*whereHeadWas).getY()*SIZE_Y + (*whereHeadWas).getX(), (*whereHeadWas));
     if(!(ateFood)) {
-        Tail t = tail.back();
+        Tail* t = &tail.back();
         tail.pop_back();
-        grid.setCell(t.getY()*SIZE_Y+t.getX(), emptyCell);
+        grid.setCell((*t).getY()*SIZE_Y+(*t).getX(), emptyCell);
     }
 
     /////////// Deal with eaten food /////////////
