@@ -56,7 +56,7 @@ bool Game::update(){
             head.setY(head_y-1);
         }
     }else if(dir == 2){
-        if(head_y == SIZE_X-1){
+        if(head_x == SIZE_X-1){
             head.setX(0);
         }else{
             head.setX(head_x+1);
