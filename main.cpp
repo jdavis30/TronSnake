@@ -1,14 +1,16 @@
 //#include <SFML/Graphics.hpp>
 #include <iostream>
-#include "Grid.h"
+#include "Game.h"
 
 int main()
 {
-    Grid grid = Grid();
-    for(int i=0; i<10; i++){
-        for(int j=0; j<10; j++){
-            cout << grid.getCell(i*10 + j);
-        }
+    Game game = Game(10, 10);
+    char c;
+    int x = 0;
+    cout << "WASD directions. After each direction choice you go 1 step. Hit Q to quit." << endl;
+    while(game.update()) {// YOU ONLY GET 10 STEPS FOR THIS DEMO. CHANGE PARAMETER FOR MORE STEPS.
+        cin >> c;
+        game.setDirection(c);
     }
 
     return 0;

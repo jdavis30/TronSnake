@@ -21,7 +21,13 @@ class Game {
 	public:
 		Game(int sizeX = 10, int sizeY = 10);
 		bool update();
+<<<<<<< HEAD
 		friend Grid;
+=======
+
+		void setDirection(char c);
+
+>>>>>>> e32ceeb22c039cb11e1d817806a9e9ea861b820a
 		void draw();
 
 	private:

@@ -4,14 +4,14 @@
 * Date:		4/26/2016
  */
 
-#import "Food.h"
+#include "Food.h"
 
-Food::Food(){
+Food::Food(int xVal,int yVal): Entity(xVal, yVal){
 
 }
 
 int Food::getType(){
-    return 2;
+    return 3;
 }
 
 void Food::setColorRGB(int r, int g, int b){

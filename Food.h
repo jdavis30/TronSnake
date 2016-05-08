@@ -15,7 +15,7 @@ using namespace std;
 class Food: public Entity {
 public:
 
-    Food();
+    Food(int xVal = 0, int yVal = 0);
 
     int getType();
 

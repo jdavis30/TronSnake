@@ -12,7 +12,7 @@
 
 class Head: public Entity {
 	public:
-		Head(int dir = 1);
+		Head(int xVal = 0, int yVal = 0, int dir = 1);
 		int getDirection();
 		void setDirection(int dir = 0);
 		int getType();
