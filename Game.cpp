@@ -22,15 +22,17 @@ void Game::setDirection(char d) {
     if (d == 'a') {
         if (head.getDirection() != 2)
             head.setDirection(0);
-    } else if (d == 'w'){
+    } else if (d == 'w') {
         if (head.getDirection() != 3)
             head.setDirection(1);
-    }else if(d == 'd'){
-        if(head.getDirection() != 0)
+    } else if (d == 'd') {
+        if (head.getDirection() != 0)
             head.setDirection(2);
-    }else if(d == 's'){
-        if(head.getDirection() != 1)
+    } else if (d == 's') {
+        if (head.getDirection() != 1)
             head.setDirection(3);
+    }else if(d == 'q'){
+        head.setDirection(-3);
     }else
         return;
 }
@@ -43,6 +45,10 @@ bool Game::update(){
     int location;
     bool ateFood = false;
     Entity * moveInTo;
+    if(dir == -3) {
+        cout << "quit game";
+        return false;
+    }
     if(dir == 0){
         if(head_x == 0){
             head.setX(SIZE_X-1);
