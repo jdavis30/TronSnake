@@ -1,11 +1,11 @@
 #include <SFML/Graphics.hpp>
-//#include "Tail.h"
+#include "Tail.h"
 int main()
 {
-    //Tail tail = Tail(45, 56, 240, 380, 33);
+    Tail tail = Tail(45, 56, 240, 380, 33);
     sf::RectangleShape shape;
-    //shape.move(tail.getX() * 800/10, tail.getY() * 600/10);
-    //shape.setSize(sf::Vector2f(800/10, 600/10));
+    shape.move(tail.getX() * 800/10, tail.getY() * 600/10);
+    shape.setSize(sf::Vector2f(800/10, 600/10));
     // create the window
     sf::RenderWindow window(sf::VideoMode(800, 600), "TronGame Test");
 
