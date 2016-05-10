@@ -2,12 +2,13 @@
 #include "Tail.h"
 int main()
 {
-    Tail tail = Tail(45, 56, 240, 380, 33);
+    Tail tail = Tail(3, 5, 240, 380, 33);
     sf::RectangleShape shape;
-    shape.move(tail.getX() * 800/10, tail.getY() * 600/10);
-    shape.setSize(sf::Vector2f(800/10, 600/10));
+    shape.move(tail.getX() * 800/10, tail.getY() * 800/10);
+    shape.setSize(sf::Vector2f(800/10, 800/10));
+    shape.setFillColor(sf::Color(255,255,255,255));
     // create the window
-    sf::RenderWindow window(sf::VideoMode(800, 600), "TronGame Test");
+    sf::RenderWindow window(sf::VideoMode(800, 800), "Tron Test");
 
     // run the program as long as the window is open
     while (window.isOpen())
