@@ -23,6 +23,10 @@ class Game {
 
 		void draw();
 
+		void endGame();
+
+		void reset();
+
 	private:
 		bool firstRun;
 		int SIZE_X;
