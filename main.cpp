@@ -20,6 +20,8 @@ int main()
             game.setDirection('s');
         }else if(GetAsyncKeyState(0x57)){
             game.setDirection('w');
+        }else if(GetAsyncKeyState(0x51)){
+            game.setDirection('q');
         }else{
 
         }
