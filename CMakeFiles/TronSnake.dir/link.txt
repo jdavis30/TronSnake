@@ -1,1 +1,0 @@
-/usr/bin/c++    -std=c++11    CMakeFiles/TronSnake.dir/Tail.cpp.o CMakeFiles/TronSnake.dir/Entity.cpp.o CMakeFiles/TronSnake.dir/mainTest.cpp.o  -o TronSnake -rdynamic -lsfml-audio -lsfml-graphics -lsfml-window -lsfml-system 

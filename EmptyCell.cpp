@@ -18,8 +18,4 @@ EmptyCell::EmptyCell(): Entity(0, 0) {
 
 int EmptyCell::getType() {
 	return 0;
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 93158b0a01260b8e241bac988e544d3548cc4243

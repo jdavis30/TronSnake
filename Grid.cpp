@@ -5,7 +5,7 @@
 #include "Grid.h"
 #include "EmptyCell.cpp"
 #include "Head.cpp"
-#include <random>
+#include <stdlib.h>
 #include <time.h>
 
 
@@ -15,23 +15,8 @@ Grid::Grid(int x, int y){
     SIZE_Y = y;
     grid = new Entity*[SIZE_X*SIZE_Y];
     EmptyCell* empty = new EmptyCell();
-    Head* head = new Head();
-    Food* food = new Food();
-    int index;
-    while(true){
-        index = rand() % (SIZE_X*SIZE_Y-1);
-        if(index == (SIZE_X*SIZE_Y - (SIZE_X/2)))
-            continue;
-        break;
-    }
     for(int i = 0; i<SIZE_X*SIZE_Y; i++){
-        if(i == (SIZE_X*SIZE_Y - (SIZE_X/2))){
-            grid[i] = head;
-        }else if(i == index){
-            grid[i] = food;
-        }else{
-            grid[i] = empty;
-        }
+        grid[i] = empty;
     }
 }
 

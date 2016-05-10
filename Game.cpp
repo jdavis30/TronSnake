@@ -10,12 +10,23 @@
 #include "Food.h"
 #include "Game.h"
 
-Game::Game(int sizeX, int sizeY){
+Game::Game(int sizeX, int sizeY, int wSizeX, int wSizeY){
     SIZE_X = sizeX;
     SIZE_Y = sizeY;
+    W_SIZE_X = wSizeX;
+    W_SIZE_Y = wSizeY;
     emptyCell = EmptyCell();
     grid = Grid();
+    firstRun = true;
     head = Head(5,9,1);//sets values in head, doesnt actually set the heads location.
+    headShape = new sf::RectangleShape();
+    (*headShape).setPosition(5 * W_SIZE_X/SIZE_X,9 * W_SIZE_Y/SIZE_Y);
+    (*headShape).setSize(sf::Vector2f(W_SIZE_X/SIZE_X,W_SIZE_Y/SIZE_Y));
+    (*headShape).setFillColor(sf::Color(255,255,255,255));
+    foodShape = new sf::RectangleShape();
+    (*foodShape).setFillColor(sf::Color(240,35,43,255));
+    (*foodShape).setSize(sf::Vector2f(W_SIZE_X/SIZE_X,W_SIZE_Y/SIZE_Y));;
+    window = new sf::RenderWindow(sf::VideoMode(W_SIZE_X, W_SIZE_Y), "TronSnake");
 }
 
 void Game::setDirection(char d) {
@@ -74,6 +85,7 @@ bool Game::update(){
             head.setY(head_y+1);
         }
     }
+    (*headShape).setPosition(head.getX() * W_SIZE_X/SIZE_X, head.getY() * W_SIZE_Y/SIZE_Y);
     location = head.getY()*SIZE_Y + head.getX();
     moveInTo = grid.getCell(location);
     if ((*moveInTo).getType() == 0){
@@ -87,38 +99,64 @@ bool Game::update(){
     }
     /////////// Deal with tail ////////////////
     Tail* whereHeadWas = new Tail();
+    sf::RectangleShape* tailBlock = new sf::RectangleShape();
     (*whereHeadWas).setX(head_x);
     (*whereHeadWas).setY(head_y);
+    (*tailBlock).setPosition(head_x * W_SIZE_X/SIZE_X, head_y * W_SIZE_Y/SIZE_Y);
+    (*tailBlock).setFillColor(sf::Color(45,200,24,255));
+    (*tailBlock).setSize(sf::Vector2f(W_SIZE_X/SIZE_X,W_SIZE_Y/SIZE_Y));
     tail.insert (tail.begin(), (*whereHeadWas));
+    rects.insert (rects.begin(), (*tailBlock));
     grid.setCell((*whereHeadWas).getY()*SIZE_Y + (*whereHeadWas).getX(), (*whereHeadWas));
     if(!(ateFood)) {
         Tail* t = &tail.back();
         tail.pop_back();
+        rects.pop_back();
         grid.setCell((*t).getY()*SIZE_Y+(*t).getX(), emptyCell);
     }
 
     /////////// Deal with eaten food /////////////
 
-    if(ateFood){
+    if(ateFood || firstRun){
+        firstRun = false;
         Food* newFood = new Food();
+        int indexX;
+        int indexY;
         int index;
         while(true){
-            index = rand() % (SIZE_X*SIZE_Y-1);
-           if((*grid.getCell(index)).getType() != 0)
+            indexX = rand() % (SIZE_X - 1);
+            cout << indexX << endl;
+            indexY = rand() % (SIZE_Y - 1);
+            cout << indexY << endl;
+            index =  (((indexY + 1) * SIZE_X) + indexX + 1);
+            cout << index << endl;
+            if((*grid.getCell(index)).getType() != 0)
                 continue;
             grid.setCell(index,*newFood);
+            (*foodShape).setPosition((indexX + 1) * W_SIZE_X/SIZE_X, (indexY + 1) * W_SIZE_Y/SIZE_Y);
             break;
         }
     }
 
 
     ////////////////////////////FOR MAIN TESTING////////////
+    
+
+    return true;
+}
+
+void Game::draw() {
+    (*window).clear(sf::Color::Black);
     for(int i=0; i<10; i++){
         for(int j=0; j<10; j++){
             cout << (*grid.getCell(i*10 + j)).getType();
         }
         cout << endl;
     }
-
-    return true;
+    (*window).draw(*headShape);
+    (*window).draw(*foodShape);
+    for(sf::RectangleShape i : rects) {
+        (*window).draw(i);
+    }
+    (*window).display();
 }
