@@ -7,8 +7,6 @@
  */
 #include "Grid.h"
 #include <vector>
-#include <SFML/Audio.hpp>
-#include <SFML/Graphics.hpp>
 
 
 #ifndef TRONSNAKE_GAME_H
@@ -27,8 +25,6 @@ class Game {
 		Head head;
 		vector<Tail> tail;
 		EmptyCell emptyCell;
-		vector<sf::RectangleShape> tails;
-		
 		Grid grid;
 
 };

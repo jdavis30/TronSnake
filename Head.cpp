@@ -6,6 +6,7 @@
  * Objective:   Head of the tron snake, defines where the body will go next.
  */
 #include "Head.h"
+
 Head::Head(int xVal, int yVal, int dir): Entity(xVal, yVal) {
 	direction = dir;
 }
