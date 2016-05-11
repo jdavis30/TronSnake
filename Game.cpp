@@ -117,8 +117,8 @@ bool Game::update(){
     grid.setCell((*whereHeadWas).getY()*SIZE_Y + (*whereHeadWas).getX(), (*whereHeadWas));
     if(!(ateFood)) {
         Tail* t = &tail.back();
-        tail.pop_back();
-        rects.pop_back();
+        tail.erase(tail.end());
+        rects.erase(rects.end());
         grid.setCell((*t).getY()*SIZE_Y+(*t).getX(), emptyCell);
     }
 

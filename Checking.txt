@@ -1,0 +1,29 @@
+5 Games
+LEAK SUMMARY:
+==15465==    definitely lost: 492,984 bytes in 2,149 blocks
+==15465==    indirectly lost: 362,704 bytes in 3,251 blocks
+==15465==      possibly lost: 0 bytes in 0 blocks
+==15465==    still reachable: 216,819 bytes in 878 blocks
+==15465==         suppressed: 0 bytes in 0 blocks
+==15465== 
+==15465== ERROR SUMMARY: 10 errors from 10 contexts (suppressed: 2 from 1)
+--15465-- 
+--15465-- used_suppression:      2 X on SUSE11 writev uninit padding /usr/lib/valgrind/default.supp:397
+==15465== 
+==15465== ERROR SUMMARY: 10 errors from 10 contexts (suppressed: 2 from 1)
+
+5 Games
+==15480== LEAK SUMMARY:
+==15480==    definitely lost: 550,296 bytes in 2,138 blocks
+==15480==    indirectly lost: 360,400 bytes in 3,233 blocks
+==15480==      possibly lost: 0 bytes in 0 blocks
+==15480==    still reachable: 192,691 bytes in 762 blocks
+==15480==         suppressed: 0 bytes in 0 blocks
+==15480== 
+==15480== ERROR SUMMARY: 10 errors from 10 contexts (suppressed: 2 from 1)
+--15480-- 
+--15480-- used_suppression:      2 X on SUSE11 writev uninit padding /usr/lib/valgrind/default.supp:397
+==15480== 
+==15480== ERROR SUMMARY: 10 errors from 10 contexts (suppressed: 2 from 1)
+
+http://pastebin.com/gkGPjYax
