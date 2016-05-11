@@ -3,8 +3,8 @@
 //
 
 #include "Grid.h"
-#include "EmptyCell.cpp"
-#include "Head.cpp"
+#include "EmptyCell.h"
+#include "Head.h"
 #include <stdlib.h>
 #include <time.h>
 
