@@ -24,20 +24,9 @@ int main()
         }
         else if(keyboard.isKeyPressed(sf::Keyboard::D)) {
             game.setDirection('d');
-<<<<<<< HEAD
-        }else if(GetAsyncKeyState(0x53)){
-            game.setDirection('s');
-        }else if(GetAsyncKeyState(0x57)){
-            game.setDirection('w');
-        }else if(GetAsyncKeyState(0x51)){
-            game.setDirection('q');
-        }else{
-
-=======
         }
         else if(keyboard.isKeyPressed(sf::Keyboard::Q)) {
             game.setDirection('q');
->>>>>>> 3499963cb4925defc53a6bea6a6217c792176694
         }
         game_on = game.update();
     }
