@@ -30,7 +30,6 @@ private:
     Entity ** grid;
     int SIZE_X;
     int SIZE_Y;
-    EmptyCell *empty;
 
 };
 

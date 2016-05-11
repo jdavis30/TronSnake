@@ -16,7 +16,7 @@ Game::Game(int sizeX, int sizeY, int wSizeX, int wSizeY){
     W_SIZE_X = wSizeX;
     W_SIZE_Y = wSizeY;
     emptyCell = EmptyCell();
-    grid = Grid();
+    grid = Grid(SIZE_X, SIZE_Y);
     firstRun = true;
     head = Head(5,9,1);//sets values in head, doesnt actually set the heads location.
     headShape = new sf::RectangleShape();
@@ -44,8 +44,9 @@ void Game::setDirection(char d) {
             head.setDirection(3);
     }else if(d == 'q'){
         head.setDirection(-3);
-    }else
-        return;
+    }else {
+        head.setDirection(-1);
+    }
 }
 
 bool Game::update(){
@@ -57,33 +58,39 @@ bool Game::update(){
     bool ateFood = false;
     Entity * moveInTo;
     if(dir == -3) {
-        cout << "quit game" << endl;
+        //cout << "quit game" << endl;
         return false;
     }
     if(dir == 0){
         if(head_x == 0){
-            head.setX(SIZE_X-1);
+            //head.setX(SIZE_X-1);
+            return false;
         }else{
             head.setX(head_x-1);
         }
     }else if(dir == 1){
         if(head_y == 0){
-            head.setY(SIZE_Y-1);
+            //head.setY(SIZE_Y-1);
+            return false;
         }else{
             head.setY(head_y-1);
         }
     }else if(dir == 2){
         if(head_x == SIZE_X-1){
-            head.setX(0);
+            //head.setX(0);
+            return false;
         }else{
             head.setX(head_x+1);
         }
-    }else{
+    }else if(dir == 3){
         if(head_y == SIZE_Y-1){
-            head.setY(0);
+            //head.setY(0);
+            return false;
         }else{
             head.setY(head_y+1);
         }
+    }else {
+        ;
     }
     (*headShape).setPosition(head.getX() * W_SIZE_X/SIZE_X, head.getY() * W_SIZE_Y/SIZE_Y);
     location = head.getY()*SIZE_Y + head.getX();
@@ -94,7 +101,7 @@ bool Game::update(){
         grid.setCell(location, head);
         ateFood = true;
     }else {
-        cout << "lost" << endl; //TAKE OUT AFTER DONE TESTING
+        //cout << "lost" << endl; //TAKE OUT AFTER DONE TESTING
         return false; //YOU HIT THE TAIL AND LOST THE GAME!!!!!
     }
     /////////// Deal with tail ////////////////
@@ -110,8 +117,8 @@ bool Game::update(){
     grid.setCell((*whereHeadWas).getY()*SIZE_Y + (*whereHeadWas).getX(), (*whereHeadWas));
     if(!(ateFood)) {
         Tail* t = &tail.back();
-        tail.pop_back();
-        rects.pop_back();
+        tail.erase(tail.end());
+        rects.erase(rects.end());
         grid.setCell((*t).getY()*SIZE_Y+(*t).getX(), emptyCell);
     }
 
@@ -125,11 +132,11 @@ bool Game::update(){
         int index;
         while(true){
             indexX = rand() % (SIZE_X - 1);
-            cout << indexX << endl;
+            //cout << indexX << endl;//////////DEBUG
             indexY = rand() % (SIZE_Y - 1);
-            cout << indexY << endl;
+            //cout << indexY << endl;//////////DEBUG
             index =  (((indexY + 1) * SIZE_X) + indexX + 1);
-            cout << index << endl;
+            //cout << index << endl;///////////DEBUG
             if((*grid.getCell(index)).getType() != 0)
                 continue;
             grid.setCell(index,*newFood);
@@ -139,24 +146,59 @@ bool Game::update(){
     }
 
 
-    ////////////////////////////FOR MAIN TESTING////////////
+    
     
 
     return true;
 }
 
 void Game::draw() {
-    (*window).clear(sf::Color::Black);
-    for(int i=0; i<10; i++){
+    ////////////////////////////FOR MAIN TESTING////////////
+    /*for(int i=0; i<10; i++){
         for(int j=0; j<10; j++){
             cout << (*grid.getCell(i*10 + j)).getType();
         }
         cout << endl;
+    }*/
+    sf::Font font;
+    if(!font.loadFromFile("ThrowMyHandsUpintheAirBold.ttf")){
+        return;
+    }
+    sf::Text text("WASD to move", font, 50);
+    text.setPosition(W_SIZE_X/2 - 150, W_SIZE_Y/2 - 150);
+    /////Clear Window
+    (*window).clear(sf::Color::Black);
+    //draw head and food
+    if(head.getDirection() == -1){
+        (*window).draw(text);
     }
     (*window).draw(*headShape);
     (*window).draw(*foodShape);
+    //////draw tail.
     for(sf::RectangleShape i : rects) {
         (*window).draw(i);
     }
+    ///////ddisplay screen
     (*window).display();
+}
+void Game::endGame() {
+    sf::Font font;
+    if(!font.loadFromFile("ThrowMyHandsUpintheAirBold.ttf")){
+        return;
+    }
+    sf::Text text("Game Over, Q to quit \n R to restart", font, 50);
+    text.setPosition(W_SIZE_X/2 - 200, W_SIZE_Y/2 - 200);
+    (*window).clear(sf::Color::Black);
+    (*window).draw(text);
+    (*window).display();
+}
+
+void Game::reset() {
+    emptyCell = EmptyCell();
+    grid = Grid(SIZE_X, SIZE_Y);
+    firstRun = true;
+    head = Head(5,9,1);//sets values in head, doesnt actually set the heads location.
+    (*headShape).setPosition(head.getX() * W_SIZE_X/SIZE_X,head.getY() * W_SIZE_Y/SIZE_Y);
+    tail.clear();
+    rects.clear();
 }
