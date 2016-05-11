@@ -2,7 +2,7 @@
 A tron themed game of snake.
 Installation: Linux
 
-$ g++ -o sfml-meh -std=c++11 Game.h main.cpp Tail.h Tail.cpp Food.h Food.cpp Grid.h Grid.cpp Game.cpp Entity.h Entity.cpp -lsfml-audio -lsfml-window -lsfml-graphics -lsfml-system
+$ g++ -o sfml-meh -std=c++11 *.h *.cpp -lsfml-audio -lsfml-window -lsfml-graphics -lsfml-system
 
 $./sfml-meh
 
